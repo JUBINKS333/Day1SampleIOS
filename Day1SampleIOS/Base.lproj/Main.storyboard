@@ -82,7 +82,6 @@
                                 <rect key="frame" x="55" y="521" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="jx8-dn-efe"/>
                                     <action selector="switchonoff:" destination="BYZ-38-t0r" eventType="valueChanged" id="psV-Wx-yg1"/>
                                 </connections>
                             </switch>
