@@ -10,11 +10,42 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var num1: UITextField!
+    @IBOutlet weak var num2: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func add(_ sender: Any) {
+        
+        var a:Int = Int(num1.text!)!
+        var b:Int = Int(num2.text!)!
+        var c = a+b
+        label.text = "add\(c)"
+        
+    }
+    
+    @IBAction func sub(_ sender: Any) {
+        var a = Int(num1.text!)
+        var b = Int(num2.text!)
+        let c = a!-b!
+        label.text = "sub \(c)"
+    }
 
+    @IBAction func mul(_ sender: Any) {
+        var a = Int(num1.text!)
+        var b = Int(num2.text!)
+        let c = a!*b!
+        label.text = "mul \(c)"
+    }
+    
+    @IBAction func div(_ sender: Any) {
+        var a = Int(num1.text!)
+        var b = Int(num2.text!)
+        let c = a!/b!
+        label.text = "div \(c)"
+    }
 }
 
