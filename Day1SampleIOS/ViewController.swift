@@ -47,5 +47,19 @@ class ViewController: UIViewController {
         let c = a!/b!
         label.text = "div \(c)"
     }
+    
+    @IBOutlet weak var label2: UILabel!
+    @IBAction func switchonoff(_ sender: UISwitch) {
+        if (sender.isOn)
+        {
+            self.label2.text = "is on"
+        }
+        else
+        {
+            self.label2.text = "is off"
+        }
+        
+    }
+    
 }
 

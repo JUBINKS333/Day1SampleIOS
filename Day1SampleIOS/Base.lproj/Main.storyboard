@@ -78,18 +78,35 @@
                                     <action selector="div:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uPk-Oy-UL7"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e6p-rj-qNv">
+                                <rect key="frame" x="55" y="521" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="jx8-dn-efe"/>
+                                    <action selector="switchonoff:" destination="BYZ-38-t0r" eventType="valueChanged" id="psV-Wx-yg1"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHw-l2-now">
+                                <rect key="frame" x="57" y="580" width="313" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.71788407296479173" green="0.81483890393666281" blue="0.91213973445595853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="im9-xK-8QX" id="lmF-rq-svJ"/>
+                        <outlet property="label2" destination="NHw-l2-now" id="vjM-Gc-QL8"/>
                         <outlet property="num1" destination="RX8-pu-crp" id="QZZ-WN-EU3"/>
                         <outlet property="num2" destination="jBB-GJ-iRO" id="XNg-7Y-F64"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="23.4375"/>
         </scene>
     </scenes>
 </document>
