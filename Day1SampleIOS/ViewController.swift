@@ -59,7 +59,16 @@ class ViewController: UIViewController {
             self.label2.text = "is off"
         }
         
+        
+        
     }
     
+    @IBAction func buttonalert(_ sender: UIButton) {
+        
+        let alert = UIAlertController(title: "alert", message:"how r u", preferredStyle: .alert)
+        let actionDefault = UIAlertAction(title: "ok", style: .default, handler: nil)
+        alert.addAction(actionDefault)
+        self.present(alert,animated: true)
+    }
 }
 
